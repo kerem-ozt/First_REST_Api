@@ -8,7 +8,8 @@ const userRoutes = require('./api/routes/users');
 
 //MongoDB connection with password
 mongoose.set("strictQuery", true);
-mongoose.connect('mongodb+srv://rollic:' + process.env.MONGO_ATLAS_PW + '@rest-api-rollic.le2zc2k.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://rollic:rollic@rest-api-rollic.le2zc2k.mongodb.net/?retryWrites=true&w=majority');
+//mongoose.connect('mongodb+srv://rollic:' + process.env.MONGO_ATLAS_PW + '@rest-api-rollic.le2zc2k.mongodb.net/?retryWrites=true&w=majority');
 mongoose.Promise = global.Promise;
 
 //Use morgan and body parser for handling cors and parsing body in functions
